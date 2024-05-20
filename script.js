@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if(query.length === 0){
         suggestionsList.style.padding = '0px';
       }
-      if(query.length > 0 && searchInput === document.activeElement){
-        suggestionsList.style.padding = '0px';
+      if(query.length < 0 && searchInput === document.activeElement){
+        suggestionsList.style.padding = '10px';
       }
       displaySuggestions(filteredCountries, query);
   });
